@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+/* APP */
+.App{
+    background-color: #C98BB9;
+    height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cfb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* SIGN UP CONTAINER */
+.Container{
+    position: relative; 
+
+    width: 50%;
+    height: 60%;
+
+    box-shadow: 1px 2px 2px #592941;
+    border: 0.1em solid #592941;
+    border-radius: 0.5em;
+    background-color: #EEFCF8;
+
+    transition: 3s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.banner{
+    position: absolute;
+    z-index: 2;
+    right: 65%;
+
+    width: 35%;
+    height: 100%;
+
+    flex-direction: column;
+
+    background-color: #035E7B;
+    
+    color: #EEFCF8;
+
+    transition: 2s;
 }
 
-.App-link {
-  color: #61dafb;
+.form{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+
+    width: 65%;
+    height: 100%;
+
+    background-color: #EEFCF8;
+
+    color: #035E7B;
+
+    transition: 2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.send-right{
+    right: 0;
+}
+
+.send-left{
+    right: 35%;
 }

@@ -30,9 +30,16 @@
     position: absolute;
     z-index: 2;
     right: 65%;
+
     width: 35%;
     height: 100%;
+
+    flex-direction: column;
+
     background-color: #035E7B;
+    
+    color: #EEFCF8;
+
     transition: 2s;
 }
 
@@ -40,8 +47,14 @@
     position: absolute;
     z-index: 1;
     right: 0;
+
     width: 65%;
     height: 100%;
+
+    background-color: #EEFCF8;
+
+    color: #035E7B;
+
     transition: 2s;
 }
 

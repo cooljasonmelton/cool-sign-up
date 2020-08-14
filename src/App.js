@@ -4,13 +4,12 @@ import React from 'react';
 import './App.css';
 
 // components 
-import SignUpContainer from './sign-up-container/SignUpContainer';
+import Container from './container/Container';
 
 const App = () => {
   return (
-    <div className="App">
-      <SignUpContainer/>
-
+    <div className="App cfb">
+      <Container/>
     </div>
   );
 }

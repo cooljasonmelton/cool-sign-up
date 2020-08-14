@@ -1,0 +1,54 @@
+/* APP */
+.App{
+    background-color: #C98BB9;
+    height: 100vh;
+}
+
+.cfb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* SIGN UP CONTAINER */
+.Container{
+    position: relative; 
+
+    width: 50%;
+    height: 60%;
+
+    box-shadow: 1px 2px 2px #592941;
+    border: 0.1em solid #592941;
+    border-radius: 0.5em;
+    background-color: #EEFCF8;
+
+    transition: 3s;
+}
+
+.banner{
+    position: absolute;
+    z-index: 2;
+    right: 65%;
+    width: 35%;
+    height: 100%;
+    background-color: #035E7B;
+    transition: 2s;
+}
+
+.form{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    width: 65%;
+    height: 100%;
+    transition: 2s;
+}
+
+.send-right{
+    right: 0;
+}
+
+.send-left{
+    right: 35%;
+}

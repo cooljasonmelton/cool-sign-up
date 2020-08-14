@@ -21,7 +21,8 @@
     box-shadow: 1px 2px 2px #592941;
     border: 0.1em solid #592941;
     border-radius: 0.5em;
-    background-color: #EEFCF8;
+    background-color: #74E7C6;
+    background-image: url('./shapes.jpg'); 
 
     transition: 3s;
 }
@@ -30,6 +31,9 @@
     position: absolute;
     z-index: 2;
     right: 65%;
+
+    border: 0.1em solid #592941;
+    border-radius: 0.5em;
 
     width: 35%;
     height: 100%;
@@ -47,6 +51,9 @@
     position: absolute;
     z-index: 1;
     right: 0;
+
+    border: 0.1em solid #592941;
+    border-radius: 0.5em;
 
     width: 65%;
     height: 100%;

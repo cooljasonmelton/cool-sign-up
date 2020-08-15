@@ -32,11 +32,26 @@ const Container = () => {
     <div className={setContainerClass()}>
 
       <div className={setBannerClass()}> 
-        Banner
-        <button onClick={()=>setWelcome(!welcome)}> Sign In </button>
+
+      {welcome ? 
+        <h2>Hello, New Friend!</h2>
+          : <h2>Welcome Back</h2>}
+
+        <button onClick={()=> setWelcome(!welcome)}>
+          {welcome ?
+            "Sign In"
+              : "Create Account"}
+        </button>
       </div>
 
-      <div className={setFormClass()}> Form </div>
+      <div className={setFormClass()}> 
+          {/* conditionally render sign up or sign in form */}
+          {welcome ? 
+            <SignUp welcome={welcome}/> 
+              : <SignIn/>
+          }
+          
+      </div>
 
     </div>
   );

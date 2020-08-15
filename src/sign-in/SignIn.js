@@ -5,7 +5,7 @@ import '../App.css';
 
 const SignIn = () => {
   return (
-    <div className="SignIn cfb">
+    <div className="form-comp cfb">
       <h1>Sign In!</h1>
       <form className="sign-up-form cfb">
         <label>

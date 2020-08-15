@@ -10,32 +10,26 @@ import SignUp from '../sign-up/SignUp';
 const Container = () => {
   const [welcome, setWelcome] = useState(false)
 
-
-  const setContainerClass = () => {
-    const classArr = ["Container cfb"] 
-    return classArr.join(' ')
-  }
-
   const setBannerClass = () => {
-    const classArr = ["banner cfb"]
+    const classArr = ["banner-side cfb"]
     if (welcome) classArr.push('send-right')
     return classArr.join(' ')
   }
 
   const setFormClass = () => {
-    const classArr = ["form cfb"] 
+    const classArr = ["form-side cfb"] 
     if (welcome) classArr.push('send-left')
     return classArr.join(' ')
   }
 
   return (
-    <div className={setContainerClass()}>
+    <div className="Container cfb">
 
       <div className={setBannerClass()}> 
 
-      {welcome ? 
-        <h2>Hello, New Friend!</h2>
-          : <h2>Welcome Back</h2>}
+        {welcome ? 
+          <h2>Hello, New Friend!</h2>
+            : <h2>Welcome Back</h2>}
 
         <button onClick={()=> setWelcome(!welcome)}>
           {welcome ?
@@ -45,14 +39,12 @@ const Container = () => {
       </div>
 
       <div className={setFormClass()}> 
-          {/* conditionally render sign up or sign in form */}
           {welcome ? 
-            <SignUp welcome={welcome}/> 
+            <SignUp /> 
               : <SignIn/>
           }
           
       </div>
-
     </div>
   );
 }

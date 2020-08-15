@@ -3,15 +3,10 @@ import React from 'react';
 // styling
 import '../App.css';
 
-const SignUp = props => {
-
-  const setClassNames = () => {
-    const classArr = ["SignUp cfb"]
-    return classArr.join(' ')
-  }
+const SignUp = () => {
 
   return (
-    <div className={setClassNames()}>
+    <div className="form-comp cfb">
       <h1>Create an Account!</h1>
       <form className="sign-up-form cfb">
         <label>

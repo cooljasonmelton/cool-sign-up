@@ -100,3 +100,27 @@
 .sign-up-form > label > input{
     width: 100%
 }
+
+button {
+    padding: 1em;
+
+    border: 1px solid #EEFCF8;
+    border-radius: 5em;
+    
+    background-color: #035E7B;
+
+    color: #EEFCF8;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+button:focus {
+    outline:0;
+}
+
+input {
+    padding: 0.5em;
+    border: 1px solid #035E7B;
+
+
+}

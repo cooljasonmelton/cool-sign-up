@@ -8,7 +8,7 @@ import SignIn from '../sign-in/SignIn';
 import SignUp from '../sign-up/SignUp';
 
 const Container = () => {
-  const [welcome, setWelcome] = useState(true)
+  const [welcome, setWelcome] = useState(false)
 
 
   const setContainerClass = () => {
